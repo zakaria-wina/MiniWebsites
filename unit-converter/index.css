@@ -1,0 +1,91 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    background-color: #1F2937;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 550px;
+    height: 730px;
+    background-color: #F4F4F4;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    background-color: #6943FF;
+    color: white;
+    align-items: center;
+}
+
+#tables {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.table {
+    height: 100px;
+    width: 500px;
+    background-color: white;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 28px;
+    margin-top: 33px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+input {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 117px;
+    height: 83px;
+    border: solid 2px #B295FF;
+    border-radius: 5px;
+    background-color: #6943FF;
+    color: white;
+    font-weight: 800;
+    font-size: 58px;
+    text-align: center;
+}
+
+button {
+    padding: 9px 27.5px;
+    justify-content: center;
+    align-items: center;
+    width: 117px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3D3D3D;
+    border-radius: 5px;
+    border: none;
+}
+
+#error-el {
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 10px;
+    height: 10px;
+}
+
+h2 {
+    color: #5A537B;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+}

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    <body>
+        <div class="table">
+            <div id="home-el">
+                <h3>HOME</h3>
+                <h4 id="home-result">0</h4>
+                <div class="btns">
+                    <button class="btn-add" onclick="add1home()">+1</button>
+                    <button class="btn-add" onclick="add2home()">+2</button>
+                    <button class="btn-add" onclick="add3home()">+3</button>
+                </div>
+            </div>
+            <div id="guest-el">
+                <h3>GUEST</h3>
+                <h4 id="guest-result">0</h4>
+                <div class="btns">
+                    <button class="btn-add" onclick="add1guest()">+1</button>
+                    <button class="btn-add" onclick="add2guest()">+2</button>
+                    <button class="btn-add" onclick="add3guest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="reset-btn" onclick="reset()">RESET</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <script src="index.js"></script>
+    </body>
+</html>

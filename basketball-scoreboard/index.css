@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.table {
+    margin: 0px auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    margin: 0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0;
+    padding: 10px 0px 0px 0px;
+    border: solid #1B244A 10px;
+
+    background-color: #080001;
+    color: #F94F6D;
+    text-align: center;
+
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: 'Cursed Timer ULiL', sans-serif;
+
+    padding: 10px 0 0 0;
+}
+
+.btn-add {
+    background-color: #1B244A;
+    color: #9AABD8;
+    border: 1px solid #9AABD8;
+    width: 45px;
+    height: 45px;
+    border-radius: 7px;
+    font-family: inherit;
+}
+
+#reset-btn {
+    display: block;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px 10px 0px 10px;
+    background-color: #1B244A;
+    color: #9AABD8;
+    border: 1px solid #9AABD8;
+    border-radius: 7px;
+    font-size: 30px;
+}
+
+#save-btn {
+    display: block;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 10px 0px 10px;
+    background-color: #1B244A;
+    color: #9AABD8;
+    border: 1px solid #9AABD8;
+    border-radius: 7px;
+    font-size: 30px;
+}
+
+.winner {
+    border: solid yellow 10px;
+}

@@ -1,0 +1,1 @@
+import { orderPriceEl } from "./renderOrder";
