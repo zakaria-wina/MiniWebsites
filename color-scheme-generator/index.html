@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <h1>Color Picker</h1>
+        <input type="color" class="color-picker">
+        <select name="themes" class="themes">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+        </select>
+        <button class="get-btn">Get color scheme</button>
+    </header>
+
+    <main class="main" id="main">
+        <section class="colors">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </section>
+        <section class="colors-hex">
+            <div class="color-hex"></div>
+            <div class="color-hex"></div>
+            <div class="color-hex"></div>
+            <div class="color-hex"></div>
+            <div class="color-hex"></div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
