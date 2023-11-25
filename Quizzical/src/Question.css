@@ -1,4 +1,5 @@
 .question {
+    padding-left: 1em;
     padding-bottom: 1em;
     border-bottom: 1px solid #DBDEF0;
 }
@@ -15,7 +16,7 @@
     font-weight: 500;
 }
 
-.answers input[type='button'] {
+.answer-btn {
     padding: 0.5em 1em;
     background-color: #F5F7FB;
     color: #293264;
@@ -24,4 +25,13 @@
     font-family: inherit;
     font-weight: 500;
     font-size: 0.7rem;
+}
+
+.answer-selected {
+    color: #F5F7FB;
+    background-color: #293264;
+}
+
+.answer-btn:active {
+	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.30) inset;
 }

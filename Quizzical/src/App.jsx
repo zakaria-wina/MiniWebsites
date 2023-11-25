@@ -4,13 +4,13 @@ import Quiz from './Quiz.jsx';
 
 function App() {
     const [isInQuizz, setIsInQuizz] = useState(false);
-    function enableQuiz() {
+    function toggleQuiz() {
         setIsInQuizz(oldIsInQuiz => !oldIsInQuiz);
     }
     return (
         (isInQuizz) ?
-            <Quiz /> :
-            <QuizStart enable={enableQuiz}/>
+            <Quiz toggleQuiz={toggleQuiz}/> :
+            <QuizStart toggleQuiz={toggleQuiz}/>
     );
 }
 
