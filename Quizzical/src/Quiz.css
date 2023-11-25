@@ -1,0 +1,19 @@
+.quiz {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.quiz button {
+    align-self: center;
+    padding: 1em 2em;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1em;
+}

@@ -1,0 +1,34 @@
+.quiz-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vw;
+    gap: 2em;
+}
+
+.quiz-start h1 {
+    align-self: center;
+    margin: 0;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.quiz-start h2 {
+    align-self: center;
+    margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.quiz-start button {
+    align-self: center;
+    padding: 1em 2em;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1em;
+}

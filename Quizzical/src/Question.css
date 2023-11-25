@@ -1,0 +1,27 @@
+.question {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #DBDEF0;
+}
+
+.question p {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.answers {
+    display: flex;
+    gap: 2em;
+    font-weight: 500;
+}
+
+.answers input[type='button'] {
+    padding: 0.5em 1em;
+    background-color: #F5F7FB;
+    color: #293264;
+    border: 1px solid #4D5B9E;
+    border-radius: 1em;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
