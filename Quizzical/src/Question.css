@@ -28,8 +28,15 @@
 }
 
 .answer-selected {
-    color: #F5F7FB;
-    background-color: #293264;
+    background-color: #D6DBF5;
+}
+
+.answer-green {
+    background-color: #94D7A2;
+}
+
+.answer-red {
+    background-color: #F8BCBC;
 }
 
 .answer-btn:active {
