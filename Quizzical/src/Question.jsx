@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+import {decode} from 'html-entities';
 import { useState } from 'react';
 import './Question.css'
 
@@ -21,7 +22,7 @@ function Question({ iQu, question, selectChoice, isShowAnswer }) {
                         )
                         }`}
                     onClick={() => selectChoice(iQu, iCh)}
-                >{choice.val}</button>
+                >{decode(choice.val)}</button>
             );
         });
         return choicesEl;
@@ -29,7 +30,7 @@ function Question({ iQu, question, selectChoice, isShowAnswer }) {
 
     return (
         <div className='question'>
-            <p>{question.question}</p>
+            <p>{decode(question.question)}</p>
             <div className="answers">
                 {getChoices()}
             </div>

@@ -3,12 +3,21 @@ import { useEffect, useState } from 'react';
 import Question from './Question.jsx';
 import './Quiz.css'
 
-function Quiz({ toggleQuiz }) {
+function Quiz({ toggleQuiz, quizOptions }) {
+
     const [isShowAnswer, setIsShowAnswer] = useState(false);
+    const [message, setMessage] = useState("");
     const [questions, setQuestions] = useState([]);
-    // const questions = ["One", "Two", "Three", "Four", "Five", "One", "Two", "Three", "Four", "Five"];
+
     useEffect(function () {
-        fetch("https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple")
+        fetch(
+            `https://opentdb.com/api.php?
+                amount=${quizOptions.amount}&
+                category=${quizOptions.category}&
+                difficulty=${quizOptions.difficulty}&
+                type=multiple
+            `
+        )
             .then(res => res.json())
             .then(data => {
                 setQuestions(data.results.map(qu => {
@@ -27,6 +36,7 @@ function Quiz({ toggleQuiz }) {
     }, []);
 
     function selectChoice(indexQu, indexCh) {
+        setMessage("");
         setQuestions(oldQuestions =>
             oldQuestions.map((qu, iQu) => {
                 return {
@@ -34,15 +44,21 @@ function Quiz({ toggleQuiz }) {
                     answers: qu.answers.map((ch, iCh) => {
                         return {
                             val: ch.val,
-                            selected:
-                                (iQu === indexQu) ?
-                                (iCh === indexCh) :
-                                ch.selected
+                            selected: (iQu === indexQu) ? (iCh === indexCh) : ch.selected
                         }
                     })
                 }
             })
         )
+    }
+
+    function checkAnswers() {
+        if (questions.every(qu => qu.answers.some(ans => ans.selected))) {
+            setMessage("Amazing !");
+            setIsShowAnswer(true);
+        } else {
+            setMessage("You have to check all the answers");
+        }
     }
 
     return (
@@ -62,11 +78,14 @@ function Quiz({ toggleQuiz }) {
                     <button
                         className='quiz-btn'
                         onClick={toggleQuiz}
-                    >Reset Quiz</button> :
+                    >Quiz Again</button> :
                     <button
                         className='quiz-btn'
-                        onClick={() => setIsShowAnswer(true)}
+                        onClick={checkAnswers}
                     >Check answers</button>
+            }
+            {
+                message && <p className={isShowAnswer ? 'message-finish' : 'message-warning'}>{message}</p>
             }
         </div>
     );
